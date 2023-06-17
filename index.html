@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <script src="https://kit.fontawesome.com/56471ca088.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body class="bg-light-yellow text-body-1 leading-body-1 font-semibold text-dark-grayish-blue">
+    <header class="px-6 pt-8 pb-[8.5rem] bg-header-mobile bg-cover bg-center xl:px-10 xl:pt-[2.375rem] xl:pb-[20.5rem] xl:bg-header-desktop text-white">
+      <nav class="flex justify-between items-center relative">
+        <img src="/logo.svg" class="max-w-[123px] xl:max-w-[170px]" alt="Logo" />
+        <button aria-label="Toggle menu" class="xl:hidden" aria-expanded="false" id="nav-btn">
+          <img src="/icon-hamburger.svg" alt="Hamburger icon" aria-hidden="true" />
+        </button>
+        <ul class="mobile-nav nav-hidden mt-16 absolute top-0 w-full bg-white text-center py-10 text-h5 leading-h5 flex flex-col gap-8 xl:hidden text-dark-grayish-blue" id="mobile-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li>
+            <a href="#" class="inline-block px-8 py-4 bg-yellow text-body-2 uppercase font-bold font-heading text-very-dark-blue rounded-[28px]">Contact</a>
+          </li>
+        </ul>
+        <ul class="hidden xl:flex items-center gap-12 leading-body-2">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li>
+            <a href="#" class="inline-block px-8 py-4 bg-white text-body-2 uppercase font-bold font-heading text-very-dark-blue rounded-[28px] hover:bg-light-blue hover:text-white transition-colors">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mt-[5.5rem] flex flex-col items-center text-center xl:mt-[6.5rem]">
+        <h1 class="uppercase font-heading font-black text-h2 leading-h2 tracking-[6.25px] xl:text-h1 xl:leading-h1 xl:tracking-[8.75px]">
+          We are creatives
+        </h1>
+        <img src="/icon-arrow-down.svg" class="mt-[3.25rem] max-h-[108px] xl:mt-24" alt="Arrow down" aria-hidden="true" />
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col xl:flex-row xl:items-center">
+        <picture class="xl:order-1 xl:w-1/2">
+          <source srcset="/desktop/image-transform.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-transform.jpg" alt="Transform" class="w-full xl:max-h-[600px] object-cover" />
+        </picture>
+        <div class="px-6 py-16 text-center xl:text-left xl:w-1/2 xl:flex xl:justify-end xl:pr-[6.875rem]">
+          <div class="xl:max-w-[445px]">
+            <h2 class="text-h3 leading-h3 tracking-[-0.3px] font-heading font-black text-very-dark-blue xl:text-h2 xl:leading-h2">Transform your brand</h2>
+            <p class="mt-6 tracking-[-0.1px] xl:mt-8">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#" class="link inline-block mt-8 uppercase font-heading text-body-2 leading-body-2 text-very-dark-blue tracking-[1px] xl:mt-10" style="--color: #FAD400">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col xl:flex-row xl:items-center">
+        <picture class="xl:w-1/2">
+          <source srcset="/desktop/image-stand-out.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-stand-out.jpg" alt="Stand out" class="w-full xl:max-h-[600px] object-cover" />
+        </picture>
+        <div class="px-6 py-16 text-center xl:text-left xl:w-1/2 xl:pl-[6.875rem]">
+          <div class="xl:max-w-[445px]">
+            <h2 class="text-h3 leading-h3 tracking-[-0.3px] font-heading font-black text-very-dark-blue xl:text-h2 xl:leading-h2">
+              Stand out to the right audience
+            </h2>
+            <p class="mt-6 tracking-[-0.1px] xl:mt-8">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="#" class="link inline-block mt-8 uppercase font-heading text-body-2 leading-body-2 text-very-dark-blue tracking-[1px] xl:mt-10" style="--color: #FE7766">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col xl:flex-row">
+        <div class="bg-graphic-design-mobile bg-cover px-6 pt-[24.875rem] pb-[3.75rem] text-green text-center xl:w-1/2 xl:bg-graphic-design-desktop xl:bg-center">
+          <div class="xl:max-w-[340px] mx-auto">
+            <h2 class="text-h4 leading-h4 tracking-[-0.2px] font-heading font-black">Graphic Design</h2>
+            <p class="text-[1rem] leading-[1.6875rem] mt-7 font-semibold tracking-[0.1px]">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+        <div class="bg-image-photography-mobile bg-cover px-6 pt-[24.875rem] pb-[3.75rem] text-blue text-center xl:w-1/2 xl:bg-image-photography-desktop xl:bg-center">
+          <div class="xl:max-w-[340px] mx-auto">
+            <h2 class="text-h4 leading-h4 tracking-[-0.2px] font-heading font-black">Photography</h2>
+            <p class="text-[1rem] leading-[1.6875rem] mt-7 font-semibold tracking-[0.1px]">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-6 pt-16 pb-[5.375rem] xl:py-40">
+        <h2 class="text-center font-heading text-gray uppercase tracking-[4px] text-[1rem] leading-[1.25rem] xl:text-h5 xl:leading-h5 xl:tracking-[5px]">
+          Client testimonials
+        </h2>
+        <div class="mt-16 max-w-[1110px] mx-auto flex flex-col gap-16 text-dark-blue xl:flex-row xl:mt-20 xl:gap-[1.875rem]">
+          <div class="flex flex-col items-center text-center">
+            <img src="/image-emily.jpg" class="max-w-[72px] rounded-full" alt="Emily" />
+            <p class="leading-[2rem] mt-8 xl:mt-[3.625rem]">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <div class="mt-8 xl:mt-[4.25rem]">
+              <h3 class="text-very-dark-blue font-heading leading-[1.375rem]">Emily R.</h3>
+              <p class="mt-[0.5625rem] text-gray text-[0.875rem] leading-body-2">Marketing Director</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img src="/image-thomas.jpg" class="max-w-[72px] rounded-full" alt="Thomas" />
+            <p class="leading-[2rem] mt-8 xl:mt-[3.625rem]">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <div class="mt-8 xl:mt-[4.25rem]">
+              <h3 class="text-very-dark-blue font-heading leading-[1.375rem]">Thomas S.</h3>
+              <p class="mt-[0.5625rem] text-gray text-[0.875rem] leading-body-2">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img src="/image-jennie.jpg" class="max-w-[72px] rounded-full" alt="Jennie" />
+            <p class="leading-[2rem] mt-8 xl:mt-[3.625rem]">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <div class="mt-8 xl:mt-[4.25rem]">
+              <h3 class="text-very-dark-blue font-heading leading-[1.375rem]">Jennie F.</h3>
+              <p class="mt-[0.5625rem] text-gray text-[0.875rem] leading-body-2">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 xl:grid-cols-4">
+        <h2 class="sr-only">Gallery</h2>
+        <picture>
+          <source srcset="/desktop/image-gallery-milkbottles.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles" class="w-full" />
+        </picture>
+        <picture>
+          <source srcset="/desktop/image-gallery-orange.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-gallery-orange.jpg" alt="Orange" class="w-full" />
+        </picture>
+        <picture>
+          <source srcset="/desktop/image-gallery-cone.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-gallery-cone.jpg" alt="Cone" class="w-full" />
+        </picture>
+        <picture>
+          <source srcset="/desktop/image-gallery-sugar-cubes.jpg" media="(min-width: 1110px)" />
+          <img src="/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes" class="w-full" />
+        </picture>
+      </section>
+    </main>
+    <footer class="bg-cyan text-light-green px-10 pt-16 pb-20">
+      <div class="max-w-[300px] mx-auto flex flex-col items-center">
+        <img src="/logo-green.svg" alt="Logo" />
+        <ul class="mt-10 self-stretch flex justify-between leading-body-2">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <div class="mt-[5.5rem] flex gap-7 text-[1.25rem] leading-[1.25rem] text-green-icons">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-square-facebook fa-lg" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram fa-lg" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <i class="fa-brands fa-pinterest fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
